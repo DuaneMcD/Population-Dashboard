@@ -1,1 +1,1 @@
-web: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && dashboard.ipynb:panel serve
+web: panel serve --address="0.0.0.0" --port=$PORT dashboard.ipynb --allow-websocket-origin=population-hvplot-dashboard.herokuapp.com
